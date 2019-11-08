@@ -31,7 +31,7 @@ class home extends Component {
 }
 
 const mapStateToProps = (state) => ({
-        todo : todo.list
+        todo : todo.dataTodo
 });
 export default connect(
     mapStateToProps

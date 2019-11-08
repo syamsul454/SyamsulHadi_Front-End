@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import Home from './src/screen/home'
+import store from './src/redux/store'
+import { Provider } from 'react-redux'
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
 
-  render() {
-    return (
-      <Home />
-    );
-  }
+const App = () => {
+  return (
+    <Provider store={store}>
+     <Home />
+    </Provider>
+  )
 }
 
 export default App;
